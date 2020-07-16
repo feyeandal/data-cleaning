@@ -1,0 +1,3 @@
+# data-cleaning
+
+Generally, the script opens and reads a geojson file and uses a json schema that validates every feature of the geojson file. It iterates over each data in the geojson file, regardless of the geometry type (point, polygon, relation) and checks its data completeness. The json schema defined is the set of attributes of a specific object. Each of the key’s features has a type requirement (string, value) and a defined set of expected values. If all of these are met, then the node is tagged as valid (complete), otherwise the node is tagged as invalid (incomplete). The output from the function is saved into a new csv file.
