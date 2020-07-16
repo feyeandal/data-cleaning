@@ -49,5 +49,5 @@ for feature in features:
 
 print ("validation done. check output file.")
 
-df = pd.DataFrame(data={"node_num": id, "stat_node": status})
+df = pd.DataFrame(data={"id_num": id, "stat_node": status})
 df.to_csv("./output45.csv", sep=',', index=False)
